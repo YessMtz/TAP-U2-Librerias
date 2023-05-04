@@ -58,11 +58,16 @@ namespace Unidad_2_Librerias
             { 
                 imagenes.Clear();
                 DirectoryInfo dire = new DirectoryInfo(directorio);
-                foreach (FileInfo fi in dire.GetFiles("*.jpg"))
+                foreach (FileInfo file in dire.GetFiles("*.jpg"))
                 {
-                    imagenes.Add(new Imagen(Bitmap.FromFile(File.), File.Fullname));
+                    imagenes.Add(new Imagen(Bitmap.FromFile(File.FullName), File.Fullname));
                 }
             }
+        }
+
+        private void UpdateControl()
+        {
+            foreach(Control ctrl in UserCtrl.Controls )
         }
 
         //clase que se usara en la lista, conetiene las caracteristicas del objeto
@@ -76,11 +81,12 @@ namespace Unidad_2_Librerias
             public Imagen(Imagen img, string fileName )
             {
                 this.img = img;
-                FileName = fileName;
+                fileName = fileName;
             }
 
 
         }
+
         private void UserCtrl_Load(object sender, EventArgs e)
         {
 
