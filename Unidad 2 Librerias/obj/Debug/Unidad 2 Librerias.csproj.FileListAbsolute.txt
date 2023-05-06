@@ -1,0 +1,4 @@
+C:\Users\admin\Desktop\REPOSITORIOS GIT HUB\TAP-U2-Librerias\Unidad 2 Librerias\obj\Debug\Unidad 2 Librerias.csproj.AssemblyReference.cache
+C:\Users\admin\Desktop\REPOSITORIOS GIT HUB\TAP-U2-Librerias\Unidad 2 Librerias\obj\Debug\Unidad_2_Librerias.UserCtrl.resources
+C:\Users\admin\Desktop\REPOSITORIOS GIT HUB\TAP-U2-Librerias\Unidad 2 Librerias\obj\Debug\Unidad 2 Librerias.csproj.GenerateResource.cache
+C:\Users\admin\Desktop\REPOSITORIOS GIT HUB\TAP-U2-Librerias\Unidad 2 Librerias\obj\Debug\Unidad 2 Librerias.csproj.CoreCompileInputs.cache

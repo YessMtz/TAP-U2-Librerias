@@ -21,7 +21,7 @@ namespace Unidad_2_Librerias
         
         //coleccion de imagenes
         //declaracion de la lista tipo imagen 
-        private List   <Imagen> imagenes = new List<Imagen>();
+        private List   <ImagenNombre> imagenes = new List<ImagenNombre>();
 
         //PROPIEDADES
         //directorio de las imagenes
@@ -60,28 +60,66 @@ namespace Unidad_2_Librerias
                 DirectoryInfo dire = new DirectoryInfo(directorio);
                 foreach (FileInfo file in dire.GetFiles("*.jpg"))
                 {
-                    imagenes.Add(new Imagen(Bitmap.FromFile(File.FullName), File.Fullname));
+                    imagenes.Add(new ImagenNombre(Bitmap.FromFile(file.FullName), file.FullName));
                 }
             }
         }
 
         private void UpdateControl()
         {
-            foreach(Control ctrl in UserCtrl.Controls )
+            panel1.SuspendLayout();
+            foreach (Control ctrl in panel1.Controls) { ctrl.Dispose(); }
+            panel1.Controls.Clear();
+            int col = borde, fila = borde;
+            panel1.ResumeLayout();
+
+            foreach (ImagenNombre img in imagenes)
+            {
+                PictureBox pic = new PictureBox();
+                pic.Image = img.Imagen;
+                pic.Tag = img.fileName;
+                pic.Size = new Point(dimension, dimension);
+                pic.Location = new Point(col, fila);
+                panel1.Controls.Add(pic);
+                col += dimension + separacion;
+                if ((col + dimension + separacion + borde) > this.Width)
+                    {
+                    col = borde;
+                    fila += dimension + separacion;
+                    }
+               
+            }
+
+             panel1.ResumeLayout();
+        }
+
+        public void refresh()
+        {
+            getImagenes();
+            UpdateControl();
+
+        }
+
+        protected override void OnSizeChanged(EventArgs e)
+        {
+            UpdateControl();
+            base.OnSizeChanged(e);
+
         }
 
         //clase que se usara en la lista, conetiene las caracteristicas del objeto
-        internal class Imagen
+        internal class ImagenNombre
         {
             //creacion de objeto de la clase
 
-            public Imagen img{get; set; }
-            public string FullName{ get; set; }
+           
+            public ImagenNombre Imagen{get; set; }
+            public string FileName{ get; set; }
 
-            public Imagen(Imagen img, string fileName )
+            public ImagenNombre(ImagenNombre img, string fileName )
             {
-                this.img = img;
-                fileName = fileName;
+                Imagen = img; 
+                FileName = fileName;
             }
 
 
