@@ -1,0 +1,13 @@
+C:\Users\admin\Desktop\REPOSITORIOS GIT HUB\TAP-U2-Librerias\PruebaVisor\bin\Debug\PruebaVisor.exe.config
+C:\Users\admin\Desktop\REPOSITORIOS GIT HUB\TAP-U2-Librerias\PruebaVisor\bin\Debug\PruebaVisor.exe
+C:\Users\admin\Desktop\REPOSITORIOS GIT HUB\TAP-U2-Librerias\PruebaVisor\bin\Debug\PruebaVisor.pdb
+C:\Users\admin\Desktop\REPOSITORIOS GIT HUB\TAP-U2-Librerias\PruebaVisor\bin\Debug\VisorFotos.dll
+C:\Users\admin\Desktop\REPOSITORIOS GIT HUB\TAP-U2-Librerias\PruebaVisor\bin\Debug\VisorFotos.pdb
+C:\Users\admin\Desktop\REPOSITORIOS GIT HUB\TAP-U2-Librerias\PruebaVisor\obj\Debug\PruebaVisor.csproj.AssemblyReference.cache
+C:\Users\admin\Desktop\REPOSITORIOS GIT HUB\TAP-U2-Librerias\PruebaVisor\obj\Debug\PruebaVisor.Form1.resources
+C:\Users\admin\Desktop\REPOSITORIOS GIT HUB\TAP-U2-Librerias\PruebaVisor\obj\Debug\PruebaVisor.Properties.Resources.resources
+C:\Users\admin\Desktop\REPOSITORIOS GIT HUB\TAP-U2-Librerias\PruebaVisor\obj\Debug\PruebaVisor.csproj.GenerateResource.cache
+C:\Users\admin\Desktop\REPOSITORIOS GIT HUB\TAP-U2-Librerias\PruebaVisor\obj\Debug\PruebaVisor.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\REPOSITORIOS GIT HUB\TAP-U2-Librerias\PruebaVisor\obj\Debug\PruebaVisor.csproj.CopyComplete
+C:\Users\admin\Desktop\REPOSITORIOS GIT HUB\TAP-U2-Librerias\PruebaVisor\obj\Debug\PruebaVisor.exe
+C:\Users\admin\Desktop\REPOSITORIOS GIT HUB\TAP-U2-Librerias\PruebaVisor\obj\Debug\PruebaVisor.pdb

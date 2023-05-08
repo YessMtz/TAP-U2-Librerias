@@ -1,0 +1,8 @@
+C:\Users\admin\Desktop\REPOSITORIOS GIT HUB\TAP-U2-Librerias\Unidad 2 Librerias\bin\Debug\VisorFotos.dll
+C:\Users\admin\Desktop\REPOSITORIOS GIT HUB\TAP-U2-Librerias\Unidad 2 Librerias\bin\Debug\VisorFotos.pdb
+C:\Users\admin\Desktop\REPOSITORIOS GIT HUB\TAP-U2-Librerias\Unidad 2 Librerias\obj\Debug\VisorFotos.csproj.AssemblyReference.cache
+C:\Users\admin\Desktop\REPOSITORIOS GIT HUB\TAP-U2-Librerias\Unidad 2 Librerias\obj\Debug\Unidad_2_Librerias.UserCtrl.resources
+C:\Users\admin\Desktop\REPOSITORIOS GIT HUB\TAP-U2-Librerias\Unidad 2 Librerias\obj\Debug\VisorFotos.csproj.GenerateResource.cache
+C:\Users\admin\Desktop\REPOSITORIOS GIT HUB\TAP-U2-Librerias\Unidad 2 Librerias\obj\Debug\VisorFotos.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\REPOSITORIOS GIT HUB\TAP-U2-Librerias\Unidad 2 Librerias\obj\Debug\VisorFotos.dll
+C:\Users\admin\Desktop\REPOSITORIOS GIT HUB\TAP-U2-Librerias\Unidad 2 Librerias\obj\Debug\VisorFotos.pdb

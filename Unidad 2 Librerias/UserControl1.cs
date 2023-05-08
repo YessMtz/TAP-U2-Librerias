@@ -13,6 +13,10 @@ namespace Unidad_2_Librerias
 {
     public partial class UserCtrl: UserControl
     {
+        public delegate void ImagenSeleccionadaDelegate(object sender, ImagenSelecionadaArg e);
+        public event ImagenSeleccionadaDelegate ImagenSeleccionada;
+
+        
         //variables
         private string directorio = "";
         private int dimension;
@@ -28,6 +32,8 @@ namespace Unidad_2_Librerias
         public string Directorio {
             get { return directorio; }
             set { directorio = value;
+
+                getImagenes();
                 UpdateControl();
             }
         }
@@ -77,10 +83,14 @@ namespace Unidad_2_Librerias
             {
                 PictureBox pic = new PictureBox();
                 pic.Image = img.Imagen;
-                pic.Tag = img.fileName;
-                pic.Size = new Point(dimension, dimension);
+                pic.Tag = img.FileName;
+                pic.Size = new Size(dimension, dimension);
                 pic.Location = new Point(col, fila);
+                
+                //evento clic
                 panel1.Controls.Add(pic);
+                pic.Click += new EventHandler(this.pic_Click);
+                
                 col += dimension + separacion;
                 if ((col + dimension + separacion + borde) > this.Width)
                     {
@@ -91,6 +101,7 @@ namespace Unidad_2_Librerias
             }
 
              panel1.ResumeLayout();
+
         }
 
         public void refresh()
@@ -107,16 +118,31 @@ namespace Unidad_2_Librerias
 
         }
 
-        //clase que se usara en la lista, conetiene las caracteristicas del objeto
+        //generacion del evento para imagenDelegate para que cuando alguien toque la imagen salga el nombre
+        private void pic_Click(object sender, System.EventArgs e)
+        {
+            PictureBox picSeleccionada = (PictureBox)sender;
+            ImagenSelecionadaArg args = new ImagenSelecionadaArg(picSeleccionada.Image, (string) picSeleccionada.Tag);
+            ImagenSeleccionada(this, args);
+
+        }
+
+        
+
+        private void UserCtrl_Load(object sender, EventArgs e)
+        {
+
+        }
+    //clase que se usara en la lista, conetiene las caracteristicas del objeto
         internal class ImagenNombre
         {
             //creacion de objeto de la clase
-
+            public Image Imagen { get; set; }
            
-            public ImagenNombre Imagen{get; set; }
+            
             public string FileName{ get; set; }
 
-            public ImagenNombre(ImagenNombre img, string fileName )
+            public ImagenNombre(Image img, string fileName)
             {
                 Imagen = img; 
                 FileName = fileName;
@@ -125,9 +151,17 @@ namespace Unidad_2_Librerias
 
         }
 
-        private void UserCtrl_Load(object sender, EventArgs e)
-        {
-
-        }
+       
     }
+     public  class ImagenSelecionadaArg : EventArgs
+        {
+            public Image Imagen { get; set; }
+            public string FileName { get; set; }
+            public ImagenSelecionadaArg(Image img, string fileName)
+            {
+                Imagen = img;
+                FileName = fileName;
+            }
+        }
+
 }

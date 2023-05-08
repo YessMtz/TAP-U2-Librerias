@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.4.33122.133
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32126.315
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unidad 2 Librerias", "Unidad 2 Librerias.csproj", "{19500F40-2558-4515-B43A-74865D0E4276}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisorFotos", "VisorFotos.csproj", "{19500F40-2558-4515-B43A-74865D0E4276}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PruebaVisor", "..\PruebaVisor\PruebaVisor.csproj", "{B400D974-C4EB-4878-B514-E33D21D9B70D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{19500F40-2558-4515-B43A-74865D0E4276}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19500F40-2558-4515-B43A-74865D0E4276}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{19500F40-2558-4515-B43A-74865D0E4276}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B400D974-C4EB-4878-B514-E33D21D9B70D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B400D974-C4EB-4878-B514-E33D21D9B70D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B400D974-C4EB-4878-B514-E33D21D9B70D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B400D974-C4EB-4878-B514-E33D21D9B70D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
